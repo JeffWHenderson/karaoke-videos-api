@@ -20,7 +20,7 @@ class Api::VideosController < ApplicationController
     render json: @video
   end
 
-  def updated_at
+  def update
     if @video.update(video_params)
       render json: @video
     else
