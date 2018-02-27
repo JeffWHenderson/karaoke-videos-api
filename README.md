@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
 
-Things you may want to cover:
+The API can be found at https://github.com/JeffWHenderson/karaoke-videos-api
+it requires Ruby 2.3.1 and Rails 5.1.4.
 
-* Ruby version
+Once you have Ruby 2.3.1 and Rails 5.1.4 installed,
 
-* System dependencies
+from your terminal:
+* ```fork https://github.com/JeffWHenderson/karaoke-videos-api & clone locally```
+* ```cd karaoke-videos-api from your local directory```
+* ```bundle install```
+* ```rake db:migrate```
+* ```rake db:seed```
+* ```rails s -p 3001```
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+this project is intended to be used with a react front end you can find at https://github.com/JeffWHenderson/karaoke-videos-client
