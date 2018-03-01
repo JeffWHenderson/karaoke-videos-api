@@ -2,7 +2,8 @@ class Api::VideosController < ApplicationController
   before_action :set_video, only: [:show, :update, :destroy]
 
   def index
-    videos = Video.all.partition{|v| v.favorite }.flatten
+    videos = Video.all.sort_by{|v| v.title  } # alphabetical sort
+    #videos = Video.all.partition{|v| v.favorite }.flatten
     render json: videos
   end
 
